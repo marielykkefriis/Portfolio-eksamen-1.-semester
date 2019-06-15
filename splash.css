@@ -1,0 +1,19 @@
+#splash {
+    width: 100vw;
+    height: 170vw;
+    background-image: url(img/forside.png);
+    background-size: cover;
+    background-position: 70% 0%;
+    margin: -10px;
+
+}
+
+
+@media (orientation: landscape) {
+    #splash {
+        width: 100vw;
+        height: 56.25vw;
+        background-position: 0% 0%;
+
+    }
+}

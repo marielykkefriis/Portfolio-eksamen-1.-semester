@@ -1,0 +1,708 @@
+body {
+    background: #F7F5D7;
+    margin: 0;
+
+}
+
+header h1 {
+    color: #F4C0BA;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: century;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+
+}
+
+p {
+    font-family: century;
+    /* HEADER */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    color: black;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+li a {
+    display: block;
+    color: aqua;
+}
+
+li a:hover {
+    color: red;
+}
+
+.active {
+    color: lawngreen;
+}
+
+/*
+#menu {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+*/
+
+
+/* BURGERMENU */
+
+.hidden {
+    /*    display: none;*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#burgermenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#burgermenu img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#menu {
+    list-style-type: none;
+    margin-top: 70px;
+
+}
+
+#menubaggrund {
+    background-image: url(img/ananaas.svg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menuknap {
+    /*    display: inline-block;*/
+    position: absolute;
+    padding: 30px;
+    font-family: 'burgermenu';
+    font-size: 30px;
+    z-index: 1;
+
+
+}
+
+header li {
+    margin: 30px 0px 0px 30px;
+    width: 70vw;
+    height: 55px;
+    background-color: white;
+
+}
+
+header li a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+}
+
+.tekst {
+    margin: 16px 40px;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-family: helvetica;
+}
+
+.tekst2 {
+    margin: 16px 40px;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-family: helvetica;
+}
+
+
+/* FORSIDE */
+
+#splash {
+    width: 100vw;
+    height: 170vw;
+    background-image: url(img/forside.png);
+    background-size: cover;
+    background-position: 80% 0%;
+    margin: -10px;
+
+}
+
+
+/* FOOTER */
+
+.sociale_medier {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    justify-content: center;
+    height: 75px;
+
+
+}
+
+.kontakt_info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: helvetica;
+    font-style: italic;
+    line-height: 1.4;
+
+}
+
+
+/* PORTFOLIO */
+
+
+#portfolio img {
+    width: 100%;
+
+
+}
+
+#portfolio h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-family: helvetica;
+}
+
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+#sectionwrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#portfolio .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 8px 8px 8px 8px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+    max-width: 370px;
+
+
+}
+
+#portfolio p {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 4px 10px -1px;
+
+}
+
+.titel {
+    height: 230px;
+    background: red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web {
+    background: #FAF7CD;
+}
+
+.anim {
+    background: #D7E9D1;
+}
+
+.indhold {
+    background: #D1E5EF;
+}
+
+.ux {
+    background: #FBDAD4;
+}
+
+.col a {
+
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: helvetica;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+}
+
+/* OM */
+
+#om {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#om h1 {
+    margin-top: 80px;
+
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 450px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#om .col_tekst {
+    flex-grow: 1;
+    flex-basis: 450px;
+    margin: 0px 20px 20px 20px;
+    padding: 15px;
+}
+
+#om .col img {
+    max-width: 30vw;
+    margin-left: 10px;
+    margin-top: -40px;
+
+
+}
+
+/* ALLE TEMASIDER */
+
+.farveboks {
+    flex-grow: 2;
+    flex-basis: 500px;
+    margin: 20px 0px 20px 0px;
+    height: 230px;
+    background: #D1E5EF;
+    border-radius: 20px;
+    /*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.farveboks2 {
+    flex-grow: 2;
+    flex-basis: 500px;
+    margin: 20px 0px 20px 0px;
+    height: 230px;
+    background: #F7F5D7;
+    border-radius: 20px;
+    /*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.farveboks3 {
+    flex-grow: 2;
+    flex-basis: 500px;
+    margin: 20px 0px 20px 0px;
+    height: 230px;
+    background: #FBDAD4;
+    border-radius: 20px;
+    /*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.farveboks4 {
+    flex-grow: 2;
+    flex-basis: 500px;
+    margin: 20px 0px 20px 0px;
+    height: 230px;
+    background: #BAD3AF;
+    border-radius: 20px;
+    /*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#info .sectionwrapper {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#info .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 8px 8px 8px 8px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+    max-width: 500px;
+}
+
+#info .billede {
+    flex-grow: 1;
+    flex-basis: 400px;
+    /*    margin: 8px 8px 8px 8px;*/
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+    max-width: 470px;
+}
+
+#info .uxbillede {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 400px;
+    /*    margin: 8px 8px 8px 8px;*/
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+    max-width: 470px;
+}
+
+#info .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+#info img {
+    max-width: 500px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    flex-grow: 2;
+    flex-basis: 500px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#info p {
+    text-align: left;
+    margin: 20px;
+
+}
+
+
+#info h1 {
+    margin-top: 90px;
+
+}
+
+
+
+/* GRUNDLÆGGENDE WEB */
+
+
+/*
+#web {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#web h1 {
+    margin-top: 90px;
+}
+*/
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*
+#web .col {
+    flex-grow: 2;
+    flex-basis: 500px;
+    margin: 20px 0px 20px 0px;
+    background: #FBDAD4;
+
+
+    padding-bottom: 20px;
+}
+
+#web .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background: white;
+    box-shadow: 3px 4px 10px -1px;
+    padding: 0px 20px 0px 20px;
+}
+
+#web img {
+    width: 400px;
+    text-align: center;
+}
+
+#web h2,
+h3,
+p {
+    margin: 20px;
+}
+*/
+
+
+/* UX */
+
+/*
+.native {
+    background: #D1E5EF;
+    box-shadow: 3px 4px 10px -1px;
+}
+
+.prototype {
+    background: #FBDAD4;
+    box-shadow: 3px 4px 10px -1px;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fronter {
+    background-color: red;
+}
+*/
+
+.produkt_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.knap_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.knap_container p {
+    padding: 7px;
+}
+
+.knap_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+/* Knapper */
+
+
+.knap {
+    margin: 10px;
+    height: 35px;
+    width: 200px;
+    background: #D1E5EF;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+
+}
+
+.knap1 {
+    margin: 10px;
+    height: 35px;
+    width: 200px;
+    background: #FBDAD4;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+
+}
+
+.knap3 {
+    margin: 10px;
+    height: 35px;
+    width: 200px;
+    background: #D7E9D1;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+
+}
+
+.knap4 {
+    margin: 10px;
+    height: 35px;
+    width: 200px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px -1px;
+    text-align: center;
+
+}
+
+@font-face {
+    font-family: 'burgermenu';
+    src: url('font/arlrdb.woff') format('woff2'),
+        url('font/arlrdbd.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'century';
+    src: url('font/centurygothic.woff') format('woff2'),
+        url ('font/centurygothic.woff') format('woff');
+}
+
+@media only screen and (min-width: 600px) {
+    #menuknap {
+        display: none;
+    }
+
+    .hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menubaggrund {
+        background-image: none;
+        width: auto;
+        height: auto;
+
+    }
+
+    #menu {
+        margin-top: 10px;
+    }
+
+
+    #menu li {
+        display: inline-block;
+    }
+
+    header li {
+        margin: 0px 10px 10px 0px;
+        width: 150px;
+        height: 55px;
+        background-color: white;
+
+    }
+
+    .tekst {
+        color: black;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        font-family: helvetica;
+        text-align: center;
+    }
+
+    .tekst2 {
+        margin: 16px 14px;
+        color: black;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        font-family: helvetica;
+        text-align: center;
+    }
+
+    #burgermenu .footer {
+        display: none;
+    }
+
+    #burgermenu img {
+        display: none;
+    }
+
+
+}
+
+/*
+@media only screen and (max-width: 600px) {
+    #forside {
+        transform: scale(2.5) translateX(-8vw) translateY(20vw);
+
+    }
+}
+*/
+
+@media (orientation: landscape) {
+    #splash {
+        width: 100vw;
+        height: 56.25vw;
+        background-position: 0% 0%;
+
+    }
+}
